@@ -1,7 +1,0 @@
-README.md
-setup.py
-CustomerSegmentation.egg-info/PKG-INFO
-CustomerSegmentation.egg-info/SOURCES.txt
-CustomerSegmentation.egg-info/dependency_links.txt
-CustomerSegmentation.egg-info/requires.txt
-CustomerSegmentation.egg-info/top_level.txt
