@@ -1,0 +1,40 @@
+================================================================================
+CUSTOMER SEGMENTATION ANALYSIS REPORT
+================================================================================
+
+Run ID: 20260116_090459
+Timestamp: 2026-01-16T09:05:37.423440
+Total Customers: 9,598
+
+SEGMENT DISTRIBUTION:
+----------------------------------------
+Low Risk - Low Value: 5,723 (59.6%)
+Medium Risk - Low Value: 1,465 (15.3%)
+High Risk: 1,420 (14.8%)
+Low Risk - High Value: 766 (8.0%)
+Medium Risk - High Value: 224 (2.3%)
+
+SEGMENT PROFILES:
+----------------------------------------
+
+Low Risk - High Value:
+  • marital_status: 1 | dw_channel_key: 1 | age_category: 44-65 | income_bracket: 1.2M and above
+    Coverage: 4.8%, OR: 4.64
+
+Low Risk - Low Value:
+  • dw_channel_key: 0 | income_bracket: 70k - 149k
+    Coverage: 2.7%, OR: 1.67
+
+Medium Risk - High Value:
+  • marital_status: 1 | dw_channel_key: 1 | age_category: 44-65 | income_bracket: 150k - 299k
+    Coverage: 4.0%, OR: 9.89
+  • marital_status: 1 | purpose: 13 | dw_channel_key: 1 | age_category: 44-65
+    Coverage: 2.7%, OR: 9.88
+
+Medium Risk - Low Value:
+  • employment_status: 2 | income_bracket: 1.2M and above
+    Coverage: 19.4%, OR: 1.28
+
+High Risk:
+  • marital_status: 1 | employment_status: 2 | dw_channel_key: 1 | income_bracket: 1.2M and above
+    Coverage: 3.5%, OR: 1.83

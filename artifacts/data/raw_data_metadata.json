@@ -1,0 +1,363 @@
+{
+  "extraction_timestamp": "2026-01-16T09:05:07.559063",
+  "record_count": 12877,
+  "columns": [
+    "customer_id",
+    "loan_count",
+    "total_amount_overdue",
+    "maturity_dpd",
+    "total_missed_installment",
+    "has_14plus_dpd",
+    "count_14plus_dpd",
+    "tenor_in_months",
+    "ontime_repayment_rate",
+    "age",
+    "gender",
+    "marital_status",
+    "state",
+    "location",
+    "purpose",
+    "employment_status",
+    "dw_channel_key",
+    "total_loan_amount",
+    "income"
+  ],
+  "column_types": {
+    "customer_id": "int64",
+    "loan_count": "int64",
+    "total_amount_overdue": "float64",
+    "maturity_dpd": "int64",
+    "total_missed_installment": "int64",
+    "has_14plus_dpd": "int64",
+    "count_14plus_dpd": "int64",
+    "tenor_in_months": "float64",
+    "ontime_repayment_rate": "float64",
+    "age": "int64",
+    "gender": "object",
+    "marital_status": "object",
+    "state": "object",
+    "location": "object",
+    "purpose": "object",
+    "employment_status": "object",
+    "dw_channel_key": "object",
+    "total_loan_amount": "float64",
+    "income": "float64"
+  },
+  "data_source": "Redshift",
+  "query_hash": 508365,
+  "data_summary": {
+    "total_records": 12877,
+    "columns": [
+      "customer_id",
+      "loan_count",
+      "total_amount_overdue",
+      "maturity_dpd",
+      "total_missed_installment",
+      "has_14plus_dpd",
+      "count_14plus_dpd",
+      "tenor_in_months",
+      "ontime_repayment_rate",
+      "age",
+      "gender",
+      "marital_status",
+      "state",
+      "location",
+      "purpose",
+      "employment_status",
+      "dw_channel_key",
+      "total_loan_amount",
+      "income"
+    ],
+    "missing_values": {
+      "customer_id": 0,
+      "loan_count": 0,
+      "total_amount_overdue": 0,
+      "maturity_dpd": 0,
+      "total_missed_installment": 0,
+      "has_14plus_dpd": 0,
+      "count_14plus_dpd": 0,
+      "tenor_in_months": 0,
+      "ontime_repayment_rate": 0,
+      "age": 0,
+      "gender": 0,
+      "marital_status": 0,
+      "state": 0,
+      "location": 0,
+      "purpose": 0,
+      "employment_status": 0,
+      "dw_channel_key": 0,
+      "total_loan_amount": 0,
+      "income": 0
+    },
+    "data_types": {
+      "customer_id": "int64",
+      "loan_count": "int64",
+      "total_amount_overdue": "float64",
+      "maturity_dpd": "int64",
+      "total_missed_installment": "int64",
+      "has_14plus_dpd": "int64",
+      "count_14plus_dpd": "int64",
+      "tenor_in_months": "float64",
+      "ontime_repayment_rate": "float64",
+      "age": "int64",
+      "gender": "object",
+      "marital_status": "object",
+      "state": "object",
+      "location": "object",
+      "purpose": "object",
+      "employment_status": "object",
+      "dw_channel_key": "object",
+      "total_loan_amount": "float64",
+      "income": "float64"
+    },
+    "numeric_summary": {
+      "customer_id": {
+        "min": 44.0,
+        "max": 199368.0,
+        "mean": 100524.59012192281,
+        "median": 103675.0,
+        "std": 55462.600311536335,
+        "zeros": 0,
+        "missing": 0
+      },
+      "loan_count": {
+        "min": 1.0,
+        "max": 7.0,
+        "mean": 1.2474955346742254,
+        "median": 1.0,
+        "std": 0.5999269741074063,
+        "zeros": 0,
+        "missing": 0
+      },
+      "total_amount_overdue": {
+        "min": 0.0,
+        "max": 59074327.67,
+        "mean": 321011.21630659315,
+        "median": 20365.64,
+        "std": 1130694.5402979343,
+        "zeros": 5906,
+        "missing": 0
+      },
+      "maturity_dpd": {
+        "min": 0.0,
+        "max": 339.0,
+        "mean": 11.31016541119826,
+        "median": 0.0,
+        "std": 36.74433427377649,
+        "zeros": 10736,
+        "missing": 0
+      },
+      "total_missed_installment": {
+        "min": 0.0,
+        "max": 90.0,
+        "mean": 5.204084802360798,
+        "median": 2.0,
+        "std": 9.033693381907137,
+        "zeros": 3817,
+        "missing": 0
+      },
+      "has_14plus_dpd": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.2500582433796692,
+        "median": 0.0,
+        "std": 0.4330631392011468,
+        "zeros": 9657,
+        "missing": 0
+      },
+      "count_14plus_dpd": {
+        "min": 0.0,
+        "max": 13.0,
+        "mean": 0.7222179078978023,
+        "median": 0.0,
+        "std": 1.7074697797664415,
+        "zeros": 9657,
+        "missing": 0
+      },
+      "tenor_in_months": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 6.32080453521783,
+        "median": 6.0,
+        "std": 4.028611524565274,
+        "zeros": 0,
+        "missing": 0
+      },
+      "ontime_repayment_rate": {
+        "min": 0.0,
+        "max": 100.0,
+        "mean": 9.448359866428515,
+        "median": 0.0,
+        "std": 15.141883380382149,
+        "zeros": 8076,
+        "missing": 0
+      },
+      "age": {
+        "min": 18.0,
+        "max": 100.0,
+        "mean": 36.202919934767415,
+        "median": 35.0,
+        "std": 8.872613244253936,
+        "zeros": 0,
+        "missing": 0
+      },
+      "total_loan_amount": {
+        "min": 10930.83,
+        "max": 667582363.21,
+        "mean": 3748889.236378815,
+        "median": 882395.78,
+        "std": 14997317.02843822,
+        "zeros": 0,
+        "missing": 0
+      },
+      "income": {
+        "min": 0.0,
+        "max": 276782726.13,
+        "mean": 1811707.668640211,
+        "median": 293547.0,
+        "std": 6544767.207893242,
+        "zeros": 15,
+        "missing": 0
+      }
+    },
+    "categorical_summary": {
+      "gender": {
+        "unique_values": 3,
+        "top_value": "Male",
+        "top_count": 9990,
+        "missing": 0
+      },
+      "marital_status": {
+        "unique_values": 6,
+        "top_value": "",
+        "top_count": 10309,
+        "missing": 0
+      },
+      "state": {
+        "unique_values": 37,
+        "top_value": "Lagos",
+        "top_count": 5714,
+        "missing": 0
+      },
+      "location": {
+        "unique_values": 80,
+        "top_value": "",
+        "top_count": 1884,
+        "missing": 0
+      },
+      "purpose": {
+        "unique_values": 14,
+        "top_value": "Personal",
+        "top_count": 9044,
+        "missing": 0
+      },
+      "employment_status": {
+        "unique_values": 4,
+        "top_value": "EMPLOYED",
+        "top_count": 8407,
+        "missing": 0
+      },
+      "dw_channel_key": {
+        "unique_values": 8,
+        "top_value": "WEB",
+        "top_count": 8062,
+        "missing": 0
+      }
+    },
+    "basic_statistics": {
+      "customer_id": {
+        "min": 44.0,
+        "max": 199368.0,
+        "mean": 100524.59012192281,
+        "median": 103675.0,
+        "std": 55462.600311536335
+      },
+      "loan_count": {
+        "min": 1.0,
+        "max": 7.0,
+        "mean": 1.2474955346742254,
+        "median": 1.0,
+        "std": 0.5999269741074063
+      },
+      "total_amount_overdue": {
+        "min": 0.0,
+        "max": 59074327.67,
+        "mean": 321011.21630659315,
+        "median": 20365.64,
+        "std": 1130694.5402979343
+      },
+      "maturity_dpd": {
+        "min": 0.0,
+        "max": 339.0,
+        "mean": 11.31016541119826,
+        "median": 0.0,
+        "std": 36.74433427377649
+      },
+      "total_missed_installment": {
+        "min": 0.0,
+        "max": 90.0,
+        "mean": 5.204084802360798,
+        "median": 2.0,
+        "std": 9.033693381907137
+      },
+      "has_14plus_dpd": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.2500582433796692,
+        "median": 0.0,
+        "std": 0.4330631392011468
+      },
+      "count_14plus_dpd": {
+        "min": 0.0,
+        "max": 13.0,
+        "mean": 0.7222179078978023,
+        "median": 0.0,
+        "std": 1.7074697797664415
+      },
+      "tenor_in_months": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 6.32080453521783,
+        "median": 6.0,
+        "std": 4.028611524565274
+      },
+      "ontime_repayment_rate": {
+        "min": 0.0,
+        "max": 100.0,
+        "mean": 9.448359866428515,
+        "median": 0.0,
+        "std": 15.141883380382149
+      },
+      "age": {
+        "min": 18.0,
+        "max": 100.0,
+        "mean": 36.202919934767415,
+        "median": 35.0,
+        "std": 8.872613244253936
+      },
+      "total_loan_amount": {
+        "min": 10930.83,
+        "max": 667582363.21,
+        "mean": 3748889.236378815,
+        "median": 882395.78,
+        "std": 14997317.02843822
+      },
+      "income": {
+        "min": 0.0,
+        "max": 276782726.13,
+        "mean": 1811707.668640211,
+        "median": 293547.0,
+        "std": 6544767.207893242
+      }
+    },
+    "default_analysis": {
+      "default_rate": 0.2500582433796692,
+      "default_count": 3220,
+      "non_default_count": 9657
+    }
+  },
+  "customer_id_range": {
+    "min": 44,
+    "max": 199368
+  }
+}

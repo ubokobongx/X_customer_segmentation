@@ -1,0 +1,7 @@
+segment,combination_id,combination,observed_proportion,expected_proportion,odds_ratio,count,coverage
+Low Risk - High Value,C1,marital_status: 1 | dw_channel_key: 1 | age_category: 44-65 | income_bracket: 1.2M and above,0.048302872062663184,0.010418837257762034,4.635664729473677,37,0.048302872062663184
+Low Risk - Low Value,C1,dw_channel_key: 0 | income_bracket: 70k - 149k,0.02655949676742967,0.01594082100437591,1.6660265323603425,152,0.02655949676742967
+Medium Risk - High Value,C2,marital_status: 1 | dw_channel_key: 1 | age_category: 44-65 | income_bracket: 150k - 299k,0.04017857142857143,0.004063346530527193,9.885616574962619,9,0.04017857142857143
+Medium Risk - High Value,C1,marital_status: 1 | purpose: 13 | dw_channel_key: 1 | age_category: 44-65,0.026785714285714284,0.0027088976870181286,9.884400586056183,6,0.026785714285714284
+Medium Risk - Low Value,C1,employment_status: 2 | income_bracket: 1.2M and above,0.1931740614334471,0.1510731402375495,1.2786705992812504,283,0.1931740614334471
+High Risk,C1,marital_status: 1 | employment_status: 2 | dw_channel_key: 1 | income_bracket: 1.2M and above,0.035211267605633804,0.019274848926859763,1.8267038582445503,50,0.035211267605633804

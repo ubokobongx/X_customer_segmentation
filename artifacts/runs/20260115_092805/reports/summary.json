@@ -1,0 +1,17 @@
+{
+  "run_id": "20260115_092805",
+  "timestamp": "2026-01-15T09:28:19.364988",
+  "total_customers": 9598,
+  "segmentation_distribution": {
+    "Low Risk - Low Value": 5723,
+    "Medium Risk - Low Value": 1465,
+    "High Risk": 1420,
+    "Low Risk - High Value": 766,
+    "Medium Risk - High Value": 224
+  },
+  "artifacts": {
+    "processed_data": "artifacts/runs/20260115_092805/data/processed_data.parquet",
+    "segment_profiles": "artifacts/runs/20260115_092805/models/segment_profiles.parquet",
+    "encoding_maps": "artifacts/runs/20260115_092805/models/encoding_maps.json"
+  }
+}

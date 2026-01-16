@@ -1,0 +1,20 @@
+{
+  "run_id": "20260116_090459",
+  "timestamp": "2026-01-16T09:05:37.422580",
+  "total_customers": 9598,
+  "segmentation_distribution": {
+    "Low Risk - Low Value": 5723,
+    "Medium Risk - Low Value": 1465,
+    "High Risk": 1420,
+    "Low Risk - High Value": 766,
+    "Medium Risk - High Value": 224
+  },
+  "profiles_generated": 6,
+  "artifacts": {
+    "processed_data": "artifacts/runs/20260116_090459/data/processed_data.parquet",
+    "segmented_customers_csv": "artifacts/runs/20260116_090459/data/segmented_customers.csv",
+    "segment_profiles": "artifacts/runs/20260116_090459/models/segment_profiles.parquet",
+    "segment_profiles_csv": "artifacts/runs/20260116_090459/models/segment_profiles.csv",
+    "encoding_maps": "artifacts/runs/20260116_090459/models/encoding_maps.json"
+  }
+}

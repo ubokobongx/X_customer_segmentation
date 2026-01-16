@@ -1,0 +1,45 @@
+# config/config.yaml
+database:
+  dbname: ox_datawarehouse
+  host: ox-datawarehouse-cls.chkhpbcphj8j.eu-west-1.redshift.amazonaws.com
+  port: 5439
+  # Note: user and password should be in environment variables
+
+postgresql:
+  host: ox.c5eus2qa6gyy.eu-west-1.rds.amazonaws.com
+  database: ox
+  user: ubokobong
+  password: 4dcwG7H9ay1G
+  port: 5432
+  schema: data_science
+
+data:
+  raw_data_path: artifacts/data/raw_data.csv
+  processed_data_path: artifacts/data/processed_data.parquet
+  validation_schema_path: config/data_schema.json
+  
+preprocessing:
+  min_age: 18
+  max_age: 65
+  age_groups: 5
+  income_bins: [0, 70000, 150000, 300000, 500000, 800000, 1200000]
+  income_labels: ["<69k", "70k - 149k", "150k - 299k", "300k - 499k", "500k - 799k", "800k - 1.19M", "1.2M and above"]
+  
+segmentation:
+  risk_thresholds:
+    low_risk:
+      max_count_14plus_dpd: 0
+      max_missed_payment_ratio: 0.4
+      max_maturity_dpd: 0
+    medium_risk:
+      max_count_14plus_dpd: 1
+      max_missed_payment_ratio: 0.7
+      max_maturity_dpd: 14
+  value_thresholds:
+    monthly_loan_volume_percentile: 0.75
+    repayment_efficiency_min: 0.15
+  
+profiling:
+  or_threshold: 1.2
+  coverage_threshold: 0.02  # 2%
+  max_combinations_per_segment: 2

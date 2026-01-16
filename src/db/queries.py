@@ -1,13 +1,11 @@
-import pandas as pd
-from sqlalchemy import text
-from redshiftlogin import RedshiftConnector
+# src/db/queries.py
+"""
+SQL queries for customer segmentation pipeline.
+Central Bank Production System.
+"""
 
-class DataExporter:
-    def __init__(self):
-        self.db_connector = RedshiftConnector()
-        self.engine = self.db_connector.get_engine()
-        self.sql_query = """
-  WITH recent_loans AS (
+DATA_EXTRACTION_QUERY = """
+WITH recent_loans AS (
     SELECT a.*
     FROM "ox_datawarehouse"."stg_oxygenx"."fact_loan_details_mss" a
     JOIN (
@@ -174,21 +172,4 @@ WHERE
          ELSE ABS(income / total_loan_amount)
      END) <= 100
 ORDER BY customer_id;
-        """
-
-    def export_to_csv(self, output_file='cust_data.csv'):
-        try:
-            # Version-compatible approach
-            with self.engine.begin() as conn:
-                # Method 1: Try SQLAlchemy execution first
-                try:
-                    df = pd.read_sql_query(text(self.sql_query), conn)
-                except TypeError:
-                    # Fallback for older pandas versions
-                    df = pd.read_sql_query(self.sql_query, conn.connection)
-                
-                df.to_csv(output_file, index=False)
-                print(f"✅ Exported {len(df)} rows to '{output_file}'")
-        except Exception as e:
-            print(f"❌ Query or export failed: {str(e)}")
-            raise
+"""
